@@ -216,7 +216,9 @@ img {
   color: #172233;
 }
 .active {
-  color: white;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 15px 30px;
+  border-radius: 5px;
 }
 .alt {
   display: flex;
@@ -247,4 +249,48 @@ img {
 }
 .alt .logo .orgtitle {
   color: #f28818;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 40px auto;
+  padding-bottom: 40px;
+}
+.main .major {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+.main img {
+  width: 200px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.main .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f28818;
+  font-weight: 700;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.main .button-secondary {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #172233;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: 1px solid #172233;
+  text-decoration: none;
 }
