@@ -258,6 +258,10 @@ img {
   margin: 40px auto;
   padding-bottom: 40px;
 }
+.main .bolded {
+  color: #f28818;
+  font-weight: 700;
+}
 .main .major {
   text-align: center;
   margin-top: 40px;
