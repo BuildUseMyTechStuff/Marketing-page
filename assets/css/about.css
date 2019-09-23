@@ -185,6 +185,11 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+li {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -299,10 +304,25 @@ img {
   text-decoration: none;
 }
 #one {
-  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 40px auto;
+  padding-bottom: 40px;
 }
 #one h2,
 #one h3,
 #one p {
   text-align: center;
+}
+#one h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#one .member {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: dashed #f28818;
+  padding: 25px;
 }
