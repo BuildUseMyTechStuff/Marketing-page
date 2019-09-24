@@ -206,7 +206,7 @@ img {
   width: 100%;
   text-align: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   #nav ul {
     flex-direction: row;
     justify-content: space-between;
@@ -222,6 +222,11 @@ img {
   text-decoration: none;
   font-size: 24px;
   color: #172233;
+}
+@media (min-width: 1280px) {
+  #nav ul li a {
+    font-size: 24px;
+  }
 }
 .active {
   background-color: rgba(255, 255, 255, 0.4);
@@ -269,6 +274,12 @@ img {
   margin: 40px auto;
   padding-bottom: 40px;
 }
+@media (min-width: 1280px) {
+  .main {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
 .main .bolded {
   color: #f28818;
   font-weight: 700;
@@ -278,10 +289,21 @@ img {
   margin-top: 40px;
   font-size: 30px;
 }
+@media (min-width: 1280px) {
+  .main .major {
+    text-align: left;
+  }
+}
 .main img {
   width: 200px;
   justify-content: center;
   margin: 0 auto;
+}
+@media (min-width: 1280px) {
+  .main img {
+    width: 300px;
+    margin: 0;
+  }
 }
 .main .button {
   display: flex;
@@ -296,6 +318,12 @@ img {
   border-radius: 5px;
   text-decoration: none;
 }
+@media (min-width: 1280px) {
+  .main .button {
+    padding: 20px 70px;
+    margin-right: 10px;
+  }
+}
 .main .button-secondary {
   display: flex;
   justify-content: center;
@@ -308,4 +336,28 @@ img {
   border-radius: 5px;
   border: 1px solid #172233;
   text-decoration: none;
+}
+@media (min-width: 1280px) {
+  .main .button-secondary {
+    padding: 20px 70px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1280px) {
+  .content {
+    width: 60%;
+  }
+}
+@media (min-width: 1280px) {
+  .actions {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1280px) {
+  .line {
+    border-bottom: 2px #f28818 solid;
+    width: 20%;
+    margin: 20px 0;
+  }
 }
