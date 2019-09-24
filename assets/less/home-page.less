@@ -1,34 +1,3 @@
-.alt {
-  display: flex;
-  flex-direction: column;
-  p {
-    text-align: right;
-    width: 85%;
-    color: @title-text;
-    font-size: 18px;
-    line-height: 1.8rem;
-  }
-  .logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    align-items: center;
-    width: 100%;
-    img {
-      width: 60px;
-      margin-right: 10px;
-    }
-    h1 {
-      color: @title-text;
-      font-weight: 900;
-      font-size: 64px;
-    }
-    .orgtitle {
-      color: @orange;
-    }
-  }
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -36,8 +5,19 @@
   width: 80%;
   margin: 40px auto;
   padding-bottom: 40px;
+  @media @desktop {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .bolded {
+    color: @orange;
+    font-weight: 700;
+  }
   .major {
     text-align: center;
+    @media @desktop {
+      text-align: left;
+    }
     margin-top: 40px;
     font-size: 30px;
   }
@@ -45,6 +25,10 @@
     width: 200px;
     justify-content: center;
     margin: 0 auto;
+    @media @desktop {
+      width: 300px;
+      margin: 0;
+    }
   }
   .button {
     display: flex;
@@ -57,5 +41,26 @@
     justify-content: center;
     margin-top: 20px;
     .button-style-secondary();
+  }
+}
+
+.content {
+  @media @desktop {
+    width: 60%;
+  }
+}
+
+.actions {
+  @media @desktop {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.line {
+  @media @desktop {
+    border-bottom: 2px @orange solid;
+    width: 20%;
+    margin: 20px 0;
   }
 }
