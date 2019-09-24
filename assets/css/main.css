@@ -223,23 +223,26 @@ img {
 .alt {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
 }
 .alt p {
   text-align: right;
-  width: 85%;
+  width: 100%;
   color: #eae0d5;
   font-size: 18px;
   line-height: 1.8rem;
+  width: 320px;
+  margin: 0 auto;
 }
 .alt .logo {
   display: flex;
   justify-content: center;
   margin-top: 80px;
   align-items: center;
-  width: 100%;
 }
 .alt .logo img {
-  width: 60px;
+  width: auto;
   margin-right: 10px;
 }
 .alt .logo h1 {
