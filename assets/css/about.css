@@ -394,3 +394,19 @@ img {
 #one .member .profile {
   max-height: 400px;
 }
+#one .member .fab {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.social ul {
+  display: inline;
+}
+.social ul li {
+  display: inline;
+}
+.social ul .fa-github {
+  margin-left: 25px;
+}
+#luke .social .fa-github {
+  margin-left: -25px;
+}
