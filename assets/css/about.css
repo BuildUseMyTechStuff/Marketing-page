@@ -198,6 +198,7 @@ img {
   width: 90%;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
 }
 .main-content {
   background-color: white;
@@ -215,6 +216,14 @@ img {
   width: 100%;
   text-align: center;
 }
+@media (min-width: 1280px) {
+  #nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 #nav ul li {
   margin: 20px;
 }
@@ -224,10 +233,48 @@ img {
   font-size: 24px;
   color: #172233;
 }
+@media (min-width: 1280px) {
+  #nav ul li a {
+    font-size: 24px;
+  }
+}
 .active {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 15px 30px;
   border-radius: 5px;
+}
+.alt {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+.alt p {
+  text-align: right;
+  width: 100%;
+  color: #eae0d5;
+  font-size: 18px;
+  line-height: 1.8rem;
+  width: 320px;
+  margin: 0 auto;
+}
+.alt .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  align-items: center;
+}
+.alt .logo img {
+  width: auto;
+  margin-right: 10px;
+}
+.alt .logo h1 {
+  color: #eae0d5;
+  font-weight: 900;
+  font-size: 64px;
+}
+.alt .logo .orgtitle {
+  color: #f28818;
 }
 .alt {
   display: flex;
@@ -263,6 +310,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 80%;
   margin: 40px auto;
   padding-bottom: 40px;
@@ -290,6 +338,12 @@ img {
   border-radius: 5px;
   text-decoration: none;
 }
+@media (min-width: 1280px) {
+  .main .button {
+    padding: 20px 70px;
+    margin-right: 10px;
+  }
+}
 .main .button-secondary {
   display: flex;
   justify-content: center;
@@ -303,10 +357,17 @@ img {
   border: 1px solid #172233;
   text-decoration: none;
 }
+@media (min-width: 1280px) {
+  .main .button-secondary {
+    padding: 20px 70px;
+    margin-right: 10px;
+  }
+}
 #one {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 80%;
   margin: 40px auto;
   padding-bottom: 40px;
@@ -321,8 +382,15 @@ img {
   margin-bottom: 10px;
 }
 #one .member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 25px;
   margin-bottom: 25px;
-  border: dashed #f28818 1.4px;
+  border-top: solid silver 1.4px;
   padding: 25px;
+}
+#one .member .profile {
+  max-height: 400px;
 }
