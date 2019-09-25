@@ -386,13 +386,27 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 90%;
   margin-top: 25px;
-  margin-bottom: 25px;
-  border-top: solid silver 1.4px;
-  padding: 25px;
+  border-top: solid #f28818 1.4px;
+  padding: 40px 25px;
 }
 #one .member .profile {
   max-height: 400px;
+}
+@media (min-width: 1280px) {
+  #one .member .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+}
+@media (min-width: 800px) {
+  #one .member .about {
+    width: 70%;
+  }
 }
 #one .member .fab {
   font-size: 20px;
