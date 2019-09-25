@@ -87,13 +87,29 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 90%;
         margin-top: 25px;
-        margin-bottom: 25px;
-        border-top: solid silver 1.4px;
-        padding: 25px;
+        border-top: solid @orange 1.4px;
+        padding: 40px 25px;
 
         .profile {
             max-height: 400px;
+        }
+
+        @media @desktop{
+            .about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+            }
+        }
+
+        @media @tablet{
+            .about {
+                width: 70%;
+            }
         }
 
         .fab {
