@@ -8,6 +8,12 @@
     justify-content: center;
     width: 100%;
     text-align: center;
+    @media @desktop {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+    }
     li {
       margin: 20px;
     }
@@ -16,6 +22,9 @@
       text-decoration: none;
       font-size: 24px;
       color: @main-blue;
+      @media @desktop {
+        font-size: 24px;
+      }
     }
   }
 }
