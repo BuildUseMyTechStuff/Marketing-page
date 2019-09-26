@@ -1,0 +1,426 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc9.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #172233;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+li {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.main-content {
+  background-color: white;
+  border-radius: 5px;
+}
+#nav {
+  background-color: rgba(23, 34, 51, 0.2);
+  margin-top: 80px;
+  padding: 10px;
+}
+#nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 1280px) {
+  #nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+#nav ul li {
+  margin: 20px;
+}
+#nav ul li a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  color: #172233;
+}
+@media (min-width: 1280px) {
+  #nav ul li a {
+    font-size: 24px;
+  }
+}
+.active {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+.alt {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+}
+.alt p {
+  text-align: right;
+  width: 100%;
+  color: #eae0d5;
+  font-size: 18px;
+  line-height: 1.8rem;
+  width: 320px;
+  margin: 0 auto;
+}
+.alt .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  align-items: center;
+}
+.alt .logo img {
+  width: auto;
+  margin-right: 10px;
+}
+.alt .logo h1 {
+  color: #eae0d5;
+  font-weight: 900;
+  font-size: 64px;
+}
+.alt .logo .orgtitle {
+  color: #f28818;
+}
+.alt {
+  display: flex;
+  flex-direction: column;
+}
+.alt p {
+  text-align: right;
+  width: 85%;
+  color: #eae0d5;
+  font-size: 18px;
+  line-height: 1.8rem;
+}
+.alt .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  align-items: center;
+  width: 100%;
+}
+.alt .logo img {
+  width: 60px;
+  margin-right: 10px;
+}
+.alt .logo h1 {
+  color: #eae0d5;
+  font-weight: 900;
+  font-size: 64px;
+}
+.alt .logo .orgtitle {
+  color: #f28818;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 40px auto;
+  padding-bottom: 40px;
+}
+.main .major {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+.main img {
+  width: 200px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.main .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f28818;
+  font-weight: 700;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+@media (min-width: 1280px) {
+  .main .button {
+    padding: 20px 70px;
+    margin-right: 10px;
+  }
+}
+.main .button-secondary {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #172233;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: 1px solid #172233;
+  text-decoration: none;
+}
+@media (min-width: 1280px) {
+  .main .button-secondary {
+    padding: 20px 70px;
+    margin-right: 10px;
+  }
+}
+#one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 40px auto;
+  padding-bottom: 40px;
+}
+#one h2,
+#one h3,
+#one p {
+  text-align: center;
+}
+#one h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#one .member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 25px;
+  border-top: solid #f28818 1.4px;
+  padding: 40px 25px;
+}
+#one .member .profile {
+  max-height: 400px;
+}
+@media (min-width: 1280px) {
+  #one .member .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+}
+@media (min-width: 800px) {
+  #one .member .about {
+    width: 70%;
+  }
+}
+#one .member .fab {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.social ul {
+  display: inline;
+}
+.social ul li {
+  display: inline;
+}
+.social ul .fa-github {
+  margin-left: 25px;
+}
+#luke .social .fa-github {
+  margin-left: -25px;
+}
