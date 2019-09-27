@@ -21,7 +21,7 @@
     margin-top: 40px;
     font-size: 30px;
   }
-  img {
+  .drone-img {
     width: 200px;
     justify-content: center;
     margin: 0 auto;
@@ -30,23 +30,10 @@
       margin: 0;
     }
   }
-  .button {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    .button-style-main();
-  }
-  .button-secondary {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    .button-style-secondary();
-  }
-}
-
-.content {
-  @media @desktop {
-    width: 60%;
+  .content {
+    @media @desktop {
+      width: 60%;
+    }
   }
 }
 
@@ -65,3 +52,96 @@
   }
 }
 
+.small-line {
+  border-bottom: 2px @orange solid;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.graph-img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 40px auto;
+  padding-bottom: 40px;
+  .minor {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .bolded {
+    color: @orange;
+    font-weight: 700;
+  }
+  .major {
+    text-align: center;
+    @media @desktop {
+      text-align: left;
+    }
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  .drone-img {
+    width: 200px;
+    justify-content: center;
+    margin: 0 auto;
+    @media @desktop {
+      width: 300px;
+      margin: 0;
+    }
+  }
+  .content-why {
+    @media @desktop {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      p {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  .button-style-main();
+}
+
+.button-secondary {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  .button-style-secondary();
+}
+
+.small-line {
+  border-bottom: 2px @orange solid;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.graph-img {
+  width: 100%;
+  margin-top: 20px;
+  @media @desktop {
+    width: 50%;
+  }
+}
+
+.btn-cent {
+  @media @desktop {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

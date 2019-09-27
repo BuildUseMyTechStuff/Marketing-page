@@ -7,9 +7,15 @@
   padding: 15px 40px;
   border-radius: 5px;
   text-decoration: none;
+  transition: all 0.3s ease 0s;
+  border: 1px solid white;
   @media @desktop {
     padding: 20px 70px;
     margin-right: 10px;
+  }
+  &:hover {
+    transition: all 0.3s ease 0s;
+    border-radius: 18px;
   }
 }
 
@@ -22,8 +28,16 @@
   border-radius: 5px;
   border: 1px solid @main-bg;
   text-decoration: none;
+  transition: all 0.3s ease 0s;
   @media @desktop {
     padding: 20px 70px;
     margin-right: 10px;
+  }
+  &:hover {
+    background-color: @orange;
+    transition: all 0.3s ease 0s;
+    color: white;
+    border-radius: 18px;
+    border: 1px solid white;
   }
 }

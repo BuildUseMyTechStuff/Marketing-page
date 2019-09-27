@@ -232,16 +232,43 @@ img {
   text-decoration: none;
   font-size: 24px;
   color: #172233;
+  transition: all 0.3s ease 0s;
 }
 @media (min-width: 1280px) {
   #nav ul li a {
     font-size: 24px;
   }
 }
+#nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.158);
+  transition: all 0.3s ease 0s;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
 .active {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 15px 30px;
   border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  color: #172233;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #fff;
+  background-color: #172233;
+}
+footer h4 h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+footer p {
+  font-size: 1.3rem;
 }
 .alt {
   display: flex;
@@ -304,57 +331,19 @@ img {
     text-align: left;
   }
 }
-.main img {
+.main .drone-img {
   width: 200px;
   justify-content: center;
   margin: 0 auto;
 }
 @media (min-width: 1280px) {
-  .main img {
+  .main .drone-img {
     width: 300px;
     margin: 0;
   }
 }
-.main .button {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #f28818;
-  font-weight: 700;
-  color: white;
-  padding: 15px 40px;
-  border-radius: 5px;
-  text-decoration: none;
-}
 @media (min-width: 1280px) {
-  .main .button {
-    padding: 20px 70px;
-    margin-right: 10px;
-  }
-}
-.main .button-secondary {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  font-size: 20px;
-  text-align: center;
-  font-weight: 700;
-  color: #172233;
-  padding: 15px 40px;
-  border-radius: 5px;
-  border: 1px solid #172233;
-  text-decoration: none;
-}
-@media (min-width: 1280px) {
-  .main .button-secondary {
-    padding: 20px 70px;
-    margin-right: 10px;
-  }
-}
-@media (min-width: 1280px) {
-  .content {
+  .main .content {
     width: 60%;
   }
 }
@@ -369,5 +358,138 @@ img {
     border-bottom: 2px #f28818 solid;
     width: 20%;
     margin: 20px 0;
+  }
+}
+.small-line {
+  border-bottom: 2px #f28818 solid;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+.graph-img {
+  width: 100%;
+  margin-top: 20px;
+}
+.secondary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 40px auto;
+  padding-bottom: 40px;
+}
+.secondary .minor {
+  margin-top: 40px;
+  text-align: center;
+}
+.secondary .bolded {
+  color: #f28818;
+  font-weight: 700;
+}
+.secondary .major {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+}
+@media (min-width: 1280px) {
+  .secondary .major {
+    text-align: left;
+  }
+}
+.secondary .drone-img {
+  width: 200px;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (min-width: 1280px) {
+  .secondary .drone-img {
+    width: 300px;
+    margin: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .secondary .content-why {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .secondary .content-why p {
+    padding-left: 20px;
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f28818;
+  font-weight: 700;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  border: 1px solid white;
+}
+@media (min-width: 1280px) {
+  .button {
+    padding: 20px 70px;
+    margin-right: 10px;
+  }
+}
+.button:hover {
+  transition: all 0.3s ease 0s;
+  border-radius: 18px;
+}
+.button-secondary {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #172233;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: 1px solid #172233;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 1280px) {
+  .button-secondary {
+    padding: 20px 70px;
+    margin-right: 10px;
+  }
+}
+.button-secondary:hover {
+  background-color: #f28818;
+  transition: all 0.3s ease 0s;
+  color: white;
+  border-radius: 18px;
+  border: 1px solid white;
+}
+.small-line {
+  border-bottom: 2px #f28818 solid;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+}
+.graph-img {
+  width: 100%;
+  margin-top: 20px;
+}
+@media (min-width: 1280px) {
+  .graph-img {
+    width: 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .btn-cent {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
   }
 }
