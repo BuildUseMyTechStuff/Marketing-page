@@ -303,77 +303,6 @@ footer p {
 .alt .logo .orgtitle {
   color: #f28818;
 }
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin: 40px auto;
-  padding-bottom: 40px;
-}
-.main .major {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 30px;
-}
-.main img {
-  width: 200px;
-  justify-content: center;
-  margin: 0 auto;
-}
-.main .button {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #f28818;
-  font-weight: 700;
-  color: white;
-  padding: 15px 40px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
-  border: 1px solid white;
-}
-@media (min-width: 1280px) {
-  .main .button {
-    padding: 20px 70px;
-    margin-right: 10px;
-  }
-}
-.main .button:hover {
-  transition: all 0.3s ease 0s;
-  border-radius: 18px;
-}
-.main .button-secondary {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  font-size: 20px;
-  text-align: center;
-  font-weight: 700;
-  color: #172233;
-  padding: 15px 40px;
-  border-radius: 5px;
-  border: 1px solid #172233;
-  text-decoration: none;
-  transition: all 0.3s ease 0s;
-}
-@media (min-width: 1280px) {
-  .main .button-secondary {
-    padding: 20px 70px;
-    margin-right: 10px;
-  }
-}
-.main .button-secondary:hover {
-  background-color: #f28818;
-  transition: all 0.3s ease 0s;
-  color: white;
-  border-radius: 18px;
-  border: 1px solid white;
-}
 #one {
   display: flex;
   flex-direction: column;
@@ -381,16 +310,33 @@ footer p {
   align-items: center;
   width: 80%;
   margin: 40px auto;
-  padding-bottom: 40px;
 }
 #one h2,
 #one h3,
 #one p {
   text-align: center;
 }
+#one .top p {
+  padding: 25px;
+}
+#one .top h2 {
+  padding: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #f28818;
+}
 #one h3 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+@media (min-width: 800px) {
+  #one .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #one .team #josh {
+    width: 100%;
+  }
 }
 @media (min-width: 1280px) {
   #one .team {
@@ -409,38 +355,45 @@ footer p {
   align-items: center;
   width: 90%;
   margin-top: 25px;
-  border-top: solid #f28818 1.4px;
+  border-top: solid #f28818 1px;
   padding: 40px 25px;
 }
 #one .member .profile {
-  max-height: 400px;
+  max-height: 350px;
+}
+#one .member h3 {
+  border-bottom: 2px #f28818 solid;
+  margin-bottom: 35px;
+}
+@media (min-width: 800px) {
+  #one .member {
+    width: 40%;
+  }
 }
 @media (min-width: 1280px) {
   #one .member {
-    width: 50%;
+    width: 33%;
   }
   #one .member .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
   }
 }
-@media (min-width: 800px) {
-  #one .member .about {
-    width: 70%;
-  }
+#one .member .about {
+  text-align: center;
 }
 #one .member .fab {
   font-size: 20px;
   margin-top: 20px;
 }
 .social ul {
-  display: inline;
+  display: flex;
+  justify-content: space-evenly;
 }
-.social ul li {
-  display: inline;
+.social ul li a {
+  text-decoration: none;
 }
 .social ul .fa-github {
   margin-left: 25px;
