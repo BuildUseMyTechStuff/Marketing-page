@@ -290,36 +290,6 @@ footer p {
 .alt .logo .orgtitle {
   color: #f28818;
 }
-.alt {
-  display: flex;
-  flex-direction: column;
-}
-.alt p {
-  text-align: right;
-  width: 85%;
-  color: #eae0d5;
-  font-size: 18px;
-  line-height: 1.8rem;
-}
-.alt .logo {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-  align-items: center;
-  width: 100%;
-}
-.alt .logo img {
-  width: 60px;
-  margin-right: 10px;
-}
-.alt .logo h1 {
-  color: #eae0d5;
-  font-weight: 900;
-  font-size: 64px;
-}
-.alt .logo .orgtitle {
-  color: #f28818;
-}
 .main {
   display: flex;
   flex-direction: column;
