@@ -232,16 +232,29 @@ img {
   text-decoration: none;
   font-size: 24px;
   color: #172233;
+  transition: all 0.3s ease 0s;
 }
 @media (min-width: 1280px) {
   #nav ul li a {
     font-size: 24px;
   }
 }
+#nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.158);
+  transition: all 0.3s ease 0s;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
 .active {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 15px 30px;
   border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  color: #172233;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 footer {
   text-align: center;
@@ -289,4 +302,75 @@ footer p {
 }
 .alt .logo .orgtitle {
   color: #f28818;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 40px auto;
+  padding-bottom: 20px;
+}
+#main .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main .intro h2 {
+  margin-top: 80px;
+}
+#main .intro p {
+  margin: 20px auto;
+  text-align: center;
+}
+#main #example {
+  margin-top: 80px;
+  text-align: center;
+  border-bottom: solid #f28818 2px;
+}
+#main .examples {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main .drone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  border-bottom: solid #f28818 1.4px;
+  padding-bottom: 40px;
+}
+#main .drone img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#main .drone ul {
+  display: inline;
+  margin: 20px auto;
+}
+#main .drone ul li {
+  display: inline;
+  margin: 10px;
+}
+#main #last-drone {
+  border-bottom: none;
+  padding-bottom: opx;
+  margin-bottom: 10px;
+}
+#main .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #f28818;
+  font-weight: 700;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 60%;
 }

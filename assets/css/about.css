@@ -232,16 +232,29 @@ img {
   text-decoration: none;
   font-size: 24px;
   color: #172233;
+  transition: all 0.3s ease 0s;
 }
 @media (min-width: 1280px) {
   #nav ul li a {
     font-size: 24px;
   }
 }
+#nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.158);
+  transition: all 0.3s ease 0s;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
 .active {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 15px 30px;
   border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  color: #172233;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 footer {
   text-align: center;
@@ -290,36 +303,6 @@ footer p {
 .alt .logo .orgtitle {
   color: #f28818;
 }
-.alt {
-  display: flex;
-  flex-direction: column;
-}
-.alt p {
-  text-align: right;
-  width: 85%;
-  color: #eae0d5;
-  font-size: 18px;
-  line-height: 1.8rem;
-}
-.alt .logo {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-  align-items: center;
-  width: 100%;
-}
-.alt .logo img {
-  width: 60px;
-  margin-right: 10px;
-}
-.alt .logo h1 {
-  color: #eae0d5;
-  font-weight: 900;
-  font-size: 64px;
-}
-.alt .logo .orgtitle {
-  color: #f28818;
-}
 .main {
   display: flex;
   flex-direction: column;
@@ -351,12 +334,18 @@ footer p {
   padding: 15px 40px;
   border-radius: 5px;
   text-decoration: none;
+  transition: all 0.3s ease 0s;
+  border: 1px solid white;
 }
 @media (min-width: 1280px) {
   .main .button {
     padding: 20px 70px;
     margin-right: 10px;
   }
+}
+.main .button:hover {
+  transition: all 0.3s ease 0s;
+  border-radius: 18px;
 }
 .main .button-secondary {
   display: flex;
@@ -370,12 +359,20 @@ footer p {
   border-radius: 5px;
   border: 1px solid #172233;
   text-decoration: none;
+  transition: all 0.3s ease 0s;
 }
 @media (min-width: 1280px) {
   .main .button-secondary {
     padding: 20px 70px;
     margin-right: 10px;
   }
+}
+.main .button-secondary:hover {
+  background-color: #f28818;
+  transition: all 0.3s ease 0s;
+  color: white;
+  border-radius: 18px;
+  border: 1px solid white;
 }
 #one {
   display: flex;
