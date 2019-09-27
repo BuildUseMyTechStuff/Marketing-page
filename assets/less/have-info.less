@@ -4,7 +4,7 @@
     justify-content: center;
     width: 80%;
     margin: 40px auto;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     
     .intro {
         display: flex;
@@ -18,12 +18,14 @@
         
         p {
             margin: 20px auto;
+            text-align: center;
         }
     }
 
     #example {
         margin-top: 80px;
         text-align: center;
+        border-bottom: solid @orange 2px;
     }
 
     .examples{
@@ -40,6 +42,9 @@
 
         margin: 40px auto;
 
+        border-bottom: solid @orange 1.4px;
+        padding-bottom: 40px;
+
         img {
             border-radius: 10px;
             margin-bottom: 20px;
@@ -48,12 +53,22 @@
         ul {
             display: inline;
 
+            margin: 20px auto;
+
             li {
                 display: inline;
 
-
+                margin: 10px;
             }
         }
+
+
+    }
+
+    #last-drone {
+        border-bottom: none;
+        padding-bottom: opx;
+        margin-bottom: 10px;
     }
 
     .button {

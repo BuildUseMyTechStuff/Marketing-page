@@ -309,7 +309,7 @@ footer p {
   justify-content: center;
   width: 80%;
   margin: 40px auto;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 #main .intro {
   display: flex;
@@ -322,10 +322,12 @@ footer p {
 }
 #main .intro p {
   margin: 20px auto;
+  text-align: center;
 }
 #main #example {
   margin-top: 80px;
   text-align: center;
+  border-bottom: solid #f28818 2px;
 }
 #main .examples {
   display: flex;
@@ -338,6 +340,8 @@ footer p {
   justify-content: center;
   align-items: center;
   margin: 40px auto;
+  border-bottom: solid #f28818 1.4px;
+  padding-bottom: 40px;
 }
 #main .drone img {
   border-radius: 10px;
@@ -345,9 +349,16 @@ footer p {
 }
 #main .drone ul {
   display: inline;
+  margin: 20px auto;
 }
 #main .drone ul li {
   display: inline;
+  margin: 10px;
+}
+#main #last-drone {
+  border-bottom: none;
+  padding-bottom: opx;
+  margin-bottom: 10px;
 }
 #main .button {
   display: flex;
