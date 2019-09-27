@@ -14,6 +14,7 @@
 
         h2 {
             margin-top: 80px;
+            border-bottom: 2px solid @orange;
         }
         
         p {
@@ -25,13 +26,25 @@
     #example {
         margin-top: 80px;
         text-align: center;
-        border-bottom: solid @orange 2px;
+        border-bottom: 2px solid @orange;
+        margin-bottom: 25px;
+        padding-bottom: 40px;
     }
 
     .examples{
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media @desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @media @tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 
     .drone {
@@ -40,10 +53,17 @@
         justify-content: center;
         align-items: center;
 
-        margin: 40px auto;
-
-        border-bottom: solid @orange 1.4px;
+        margin: 25px auto;
         padding-bottom: 40px;
+
+        @media @tablet {
+            width: 40%;
+        }
+
+        @media @desktop {
+            width: 25%;
+            margin: 25px;
+        }
 
         img {
             border-radius: 10px;
@@ -51,24 +71,18 @@
         }
 
         ul {
-            display: inline;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
 
-            margin: 20px auto;
+            margin: 15px;
 
             li {
-                display: inline;
-
-                margin: 10px;
+                margin: auto 8px;
             }
         }
 
 
-    }
-
-    #last-drone {
-        border-bottom: none;
-        padding-bottom: opx;
-        margin-bottom: 10px;
     }
 
     .button {
@@ -83,9 +97,9 @@
         padding: 15px 40px;
         border-radius: 5px;
         text-decoration: none;
-        width: 60%;
+        max-width: 80%;
+        max-height: 15%
     }
-
 }    
 
 
