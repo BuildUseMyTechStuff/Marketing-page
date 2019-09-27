@@ -232,16 +232,29 @@ img {
   text-decoration: none;
   font-size: 24px;
   color: #172233;
+  transition: all 0.3s ease 0s;
 }
 @media (min-width: 1280px) {
   #nav ul li a {
     font-size: 24px;
   }
 }
+#nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.158);
+  transition: all 0.3s ease 0s;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
 .active {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 15px 30px;
   border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  color: #172233;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 footer {
   text-align: center;
